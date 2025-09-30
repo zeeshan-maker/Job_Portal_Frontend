@@ -1,0 +1,13 @@
+.footer{
+    background: linear-gradient(var(--white),var(--pink));
+}
+.footer-link{
+    display: block;
+    text-decoration: none;
+    color: var(--gray);
+    margin-bottom: 10px;
+}
+
+.footer-link:hover{
+    color: var(--black);
+}
