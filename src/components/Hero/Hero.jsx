@@ -4,19 +4,19 @@ const Hero = () => {
   return (
     <div className="container-fluid">
       <div className="hero d-flex align-items-center justify-content-center">
-       <div className="text-center">
-         <h1 className="masked-heading">Modernizing the Job <br/>Search Experience</h1>
+       <div className="text-center bg">
+         <h1 className="masked-heading fade-in">Modernizing the Job <br/>Search Experience</h1>
          <h6 className="py-lg-4 py-3 masked-heading-2">Search and find your dream job now easier then ever, you can <br/> simply browse and find a job if you need it</h6>
 
           <form className="d-flex px-lg-5">
             <div  className="input-group position-relative">
             <input type="text" 
-            className="form-control me-2 py-3 rounded-5" 
+            className="form-control me-2 rounded-5" 
             placeholder="Search for a Job..."
             />
-             <MdSearch className="search-icon" size={38} />
+             <MdSearch className="search-icon" size={30} />
             </div>
-            <button className="button1 rounded-5 px-5">Search</button>
+            <button className="button1 rounded-5 px-4">Search</button>
           </form>
           
        </div>

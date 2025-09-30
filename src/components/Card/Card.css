@@ -1,0 +1,26 @@
+.company-logo{
+    width: 40px;
+}
+.bookmark{
+    border: 1px solid var(--light-gray);
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.learnmore{
+    text-decoration: none;
+    border: 1px solid var(--light-gray);
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.learnmore:hover{
+    background-color: var(--pink);
+    color: var(--black);
+}

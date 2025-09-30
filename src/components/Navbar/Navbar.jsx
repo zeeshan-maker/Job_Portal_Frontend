@@ -20,7 +20,7 @@ function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse" id="navbarNav">
+        {/* <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav mx-auto">
             <li className="nav-item">
               <Link className="nav-link" to="/">Home</Link>
@@ -32,11 +32,11 @@ function Navbar() {
               <Link className="nav-link" to="/companies">Companies</Link>
             </li>
           </ul>
-        </div>
+        </div> */}
 
         <ul className="navbar-nav">
            <Link className="nav-link me-3" to="/login">Login</Link>
-            <Link className="button1" to="/signup">Sign Up</Link>
+            <Link className="button1" to="/recruiter">Recruiter</Link>
         </ul>
        
 

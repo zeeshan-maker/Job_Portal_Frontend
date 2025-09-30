@@ -1,5 +1,5 @@
 .hero{
-    height: 70vh;
+    height: 60vh;
     border-radius: 15px;
     background-image: url("../../assets/hero.jpg");
     background-size: cover;
@@ -15,7 +15,7 @@
 }
 
 .masked-heading{
-  font-size: 64px;
+  font-size: 54px;
   font-weight: 800;
   text-transform: uppercase;
   background: linear-gradient(90deg, #ff6a00, #ee0979);

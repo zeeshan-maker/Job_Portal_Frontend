@@ -1,0 +1,6 @@
+.company-container{
+    box-shadow: 0 0 2px;
+    /* border: 1px solid var(--light-gray); */
+    border-radius: 15px;
+    margin: 0 0.01rem;
+}
