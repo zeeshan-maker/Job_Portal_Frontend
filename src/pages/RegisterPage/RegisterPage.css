@@ -12,3 +12,12 @@
     align-items: end;
     background-color: var(--light-pink);
 }
+
+.register-button{
+    border: none;
+    box-shadow: none;
+    padding: 10px;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 5px;
+}

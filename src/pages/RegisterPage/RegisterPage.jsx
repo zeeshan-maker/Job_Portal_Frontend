@@ -1,6 +1,7 @@
 import { useState } from "react"
 import "./RegisterPage.css"
-import registerImage from "../../assets/register.svg"
+import registerImage from "../../assets/register.svg";
+import {Link} from "react-router-dom";
 function RegisterPage() {
   const [formData, setFormData] = useState({
     name: "",
@@ -24,7 +25,7 @@ function RegisterPage() {
         <div className="left-box">
           <h4>Welcom To HireMe</h4>
           <p>Please fill your personal details</p>
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} className="mb-3">
             <div className="mb-3">
               <label htmlFor="" className="form-label">Full Name</label>
               <input  
@@ -67,10 +68,12 @@ function RegisterPage() {
           </div>
 
            {/* Submit */}
-          <button type="submit" className="button1 w-100">
-            Register
+          <button type="submit" className="register-button w-100">
+            Create an account
           </button>
           </form>
+          <p className="text-center">Already have an account? 
+            <Link to="/login">LogIn</Link></p>
         </div>
 
         {/* right side  */}
