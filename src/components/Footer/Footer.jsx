@@ -3,7 +3,9 @@ import logo from "../../assets/logo.PNG"
 import "./Footer.css"
 function Footer() {
   return (
-    <div className="container-fluid py-lg-5 footer">
+    <>
+    <hr className="hr"/>
+    <div className="container-fluid pb-lg-5 footer">
       <div className="row px-4">
         <div className="col-lg-3">
           <img src={logo} alt="" className="img-fluid" />
@@ -32,6 +34,7 @@ function Footer() {
         </div>
       </div>
     </div>
+    </>
   )
 }
 

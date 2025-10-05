@@ -1,6 +1,11 @@
 .footer{
     background: linear-gradient(var(--white),var(--pink));
 }
+.hr{
+  height: 2px;
+  background-color:var(--gray);
+  width: 100%;
+}
 .footer-link{
     display: block;
     text-decoration: none;

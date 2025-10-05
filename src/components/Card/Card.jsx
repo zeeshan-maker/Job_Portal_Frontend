@@ -28,8 +28,8 @@ function Card() {
             <span>15000/month</span>
         </div>
         <div className="d-flex gap-4 justify-content-between">
-            <button className="button1 w-50">Apply</button>
-            <Link className="w-50 learnmore"> Learn More</Link>
+            <button className="btn btn-outline-success w-50">Apply</button>
+            <Link className="w-50 btn btn-outline-primary"> Learn More</Link>
         </div>
 
     </div>

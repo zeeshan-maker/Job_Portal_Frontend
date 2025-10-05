@@ -20,7 +20,7 @@ function RegisterPage() {
   };
 
   return (
-    <div className="d-flex align-items-center justify-content-center">
+    <div className="d-flex align-items-center justify-content-center py-lg-4">
        <div className="d-flex box">
         <div className="left-box">
           <h4>Welcom To HireMe</h4>
