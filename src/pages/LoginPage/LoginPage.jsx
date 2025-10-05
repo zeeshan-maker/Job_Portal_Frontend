@@ -1,9 +1,14 @@
 import "./LoginPage.css"
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import registerImage from "../../assets/register.svg";
 import { useState } from "react";
+import { login } from "../../service/auth";
+import { toast } from "react-toastify";
+import { useDispatcher } from "../../redux/useDispatcher";
 
 function LoginPage() {
+  const navigate = useNavigate();
+  const { loginUser} = useDispatcher();
    const [formData, setFormData] = useState({
       email: "",
       password: "",
@@ -16,7 +21,17 @@ function LoginPage() {
 
    const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("##333",formData)
+    try {
+     const res = await login(formData)
+     loginUser(res)
+      navigate("/")
+      setFormData({
+      email: "",
+      password: "",
+      })
+    } catch (error) {
+      toast.error(error?.response?.data.error)
+    }
   };
   return (
     <div className="d-flex align-items-center justify-content-center py-lg-4">

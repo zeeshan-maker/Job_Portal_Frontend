@@ -1,13 +1,16 @@
 import { useState } from "react"
 import "./RegisterPage.css"
 import registerImage from "../../assets/register.svg";
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
+import { register } from "../../service/auth";
+import { toast } from "react-toastify";
 function RegisterPage() {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     password: "",
-    role: "jobseeker",
+    role: "seeker",
   });
 
    const handleChange = (e) => {
@@ -16,7 +19,18 @@ function RegisterPage() {
 
    const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("##333",formData)
+    try {
+      const res = await register(formData)
+      toast.success(res.message)
+      navigate("/login")
+      setFormData({
+         name: "",
+          email: "",
+         password: "",
+      })
+    } catch (error) {
+      toast.error(error.response.data.error || "Server Error")
+    }
   };
 
   return (
